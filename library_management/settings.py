@@ -141,8 +141,8 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = "testpluto27@gmail.com"
-EMAIL_HOST_PASSWORD = "fzmk dnse zcif genh"
+EMAIL_HOST_USER = os.getenv("Host_email")
+EMAIL_HOST_PASSWORD = os.getenv("Host_password")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 FRONTEND_URL = "http://localhost:5173"
 
